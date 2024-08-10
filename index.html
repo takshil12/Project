@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovation Nexus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: .5rem;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: .5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: .75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        .nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #333;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .search-bar {
+            margin-bottom: 1.5rem;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: .5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        table th, table td {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        table th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Innovation Nexus</h1>
+    </header>
+
+    <main>
+        <div class="nav">
+            <a href="#login">Login</a>
+            <a href="#home">Home</a>
+            <a href="#register">Register</a>
+            <a href="#catalogue">Catalogue</a>
+        </div>
+
+        <!-- Login Page -->
+        <section id="login" class="container">
+            <h2>Login</h2>
+            <form>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Home Page -->
+        <section id="home" class="container">
+            <h2>Welcome to Innovation Nexus</h2>
+            <p>Welcome to Innovation Nexus!
+
+                Imagine a platform where creativity meets real-world challenges. Innovation Nexus is where industries and students come together to tackle pressing problems through innovative solutions.
+                
+                Here’s how it works:
+                
+                Industries Post Challenges: Leading companies share their toughest problem statements—real issues they’re facing and need creative solutions for.
+                
+                Students Submit Solutions: Bright minds from around the world craft and submit their best solutions to these challenges.
+                
+                Top 10 Solutions Invited: The top 10 submissions are selected and invited to showcase their solutions at an exclusive offline hackathon.
+                
+                Why Participate?
+                
+                Real Impact: Your solution could help shape the future of leading industries.
+                Networking Opportunities: Connect with industry leaders and fellow innovators.
+                Prizes and Recognition: Gain recognition and potentially win exciting prizes.
+                Join us at Innovation Nexus and turn your ideas into reality!
+                
+            </p>
+        </section>
+
+        <!-- Registration Page -->
+        <section id="register" class="container">
+            <h2>Register</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Catalogue Page -->
+        <section id="catalogue" class="container">
+            <h2>Catalogue</h2>
+            <p>Here, you will find a list of industry problem statements and student solutions. Browse through to explore the latest challenges and solutions from our community.</p>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search for a challenge..." id="search" />
+            </div>
+
+            <h3>Available Challenges</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Challenge Title</th>
+                        <th>Industry</th>
+                        <th>Description</th>
+                        <th>Submission Deadline</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Reduce Carbon Footprint</td>
+                        <td>Environmental</td>
+                        <td>Propose solutions to decrease carbon emissions.</td>
+                        <td>2024-09-30</td>
+                        <td><button onclick="viewDetails('1')">View Details</button></td>
+                    </tr>
+                    <tr>
+                        <td>Enhance Customer Experience</td>
+                        <td>Retail</td>
+                        <td>Innovative ideas to improve shopping experiences.</td>
+                        <td>2024-10-15</td>
+                        <td><button onclick="viewDetails('2')">View Details</button></td>
+                    </tr>
+                    <tr>
+                        <td>AI for Healthcare</td>
+                        <td>Healthcare</td>
+                        <td>Solutions using AI to enhance patient care.</td>
+                        <td>2024-11-01</td>
+                        <td><button onclick="viewDetails('3')">View Details</button></td>
+                    </tr>
+                    <!-- Add more challenges as needed -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script>
+        function viewDetails(id) {
+            alert("View details for challenge ID: " + id);
+            // You can implement a more detailed view or modal here.
+        }
+    </script>
+</body>
+</html>
